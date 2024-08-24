@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zynexsis - Servicios Informáticos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 72px;
+            font-family: 'Agency FB', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-right: 80px;
+        }
+
+        .logo {
+            max-width: 150px;
+            height: auto;
+        }
+
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            padding: 15px 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+            padding: 14px 19px;
+            border-radius: 5px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .section {
+            display: none;
+            padding: 20px;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        .intro {
+            text-align: center;
+        }
+
+        .intro h2 {
+            margin-top: 20px;
+        }
+
+        .intro .mission-vision {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .mission-vision h3 {
+            margin: 10px 0;
+            font-size: 28px;
+        }
+
+        .mission-vision p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .testimonials {
+            margin-top: 40px;
+        }
+
+        .testimonial {
+            background: #ddd;
+            border-left: 6px solid #333;
+            margin: 20px 0;
+            padding: 20px;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .service-card {
+            background: #ddd;
+            margin: 10px;
+            padding: 20px;
+            border-left: 6px solid #333;
+            width: calc(33% - 20px);
+            box-sizing: border-box;
+            font-size: 18px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 8px;
+        }
+
+        .service-card i {
+            margin-bottom: 10px;
+            font-size: 40px;
+        }
+
+        .service-card h3 {
+            margin: 10px 0;
+            font-size: 24px;
+        }
+
+        .contacto {
+            margin-top: 30px;
+        }
+
+        .contacto ul {
+            padding: 0;
+            list-style-type: none;
+            text-align: center;
+        }
+
+        .contacto li {
+            display: inline-block;
+            margin: 0 15px;
+            font-size: 24px;
+        }
+
+        .contacto a {
+            text-decoration: none;
+            color: #333;
+            font-size: 24px;
+        }
+
+        .contacto a:hover {
+            color: #555;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Zynexsis</h1>
+            <img src="imagenes/img.png" alt="Logotipo de Zynexsis" class="logo">
+        </div>
+        <p>Expertos en Soluciones Informáticas</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#inicio" onclick="showSection('inicio')">Inicio</a></li>
+            <li><a href="#quienes-somos" onclick="showSection('quienes-somos')">Quiénes Somos</a></li>
+            <li><a href="#servicios" onclick="showSection('servicios')">Servicios</a></li>
+            <li><a href="#contacto" onclick="showSection('contacto')">Contáctanos</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Sección de Inicio -->
+        <section id="inicio" class="section active">
+            <div class="intro">
+                <h2>Bienvenido a Zynexsis</h2>
+                <p>En Zynexsis, ofrecemos soluciones innovadoras en tecnología para optimizar tu negocio.</p>
+            </div>
+
+            <div class="mission-vision">
+                <div class="mission">
+                    <h3>Misión</h3>
+                    <p>Nuestra empresa se compromete a ofrecer asistencia técnica confiable e innovadora para optimizar el rendimiento de los sistemas tecnológicos de nuestros clientes, siempre buscando la excelencia y la mejora continua.</p>
+                </div>
+                <div class="vision">
+                    <h3>Visión</h3>
+                    <p>Nuestro objetivo es convertirnos en la empresa conocida en soluciones de soporte técnico, destacando por nuestra habilidad para prever y solventar cualquier contratiempo tecnológico. De este modo, brindaremos un acompañamiento proactivo y con visión innovadora que propicie el éxito y crecimiento constante de nuestros clientes.</p>
+                </div>
+            </div>
+
+            <div class="testimonials">
+                <h2>Testimonios</h2>
+                <div class="testimonial">
+                    <p>"Zynexsis ha transformado la manera en que gestionamos nuestros sistemas tecnológicos. Su asistencia técnica es excepcional."</p>
+                    <p><strong>— Cliente Satisfecho</strong></p>
+                </div>
+                <div class="testimonial">
+                    <p>"La consultoría de Zynexsis nos ha permitido optimizar nuestros procesos y aumentar nuestra eficiencia. Altamente recomendados."</p>
+                    <p><strong>— Empresa Asociada</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de ¿Quiénes Somos? -->
+        <section id="quienes-somos" class="section">
+            <h2>¿Quiénes Somos?</h2>
+            <img src="https://plus.unsplash.com/premium_photo-1661963212517-830bbb7d76fc?q=80&w=1386&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Imagen Representativa">
+            <p>En Zynexsis, somos un equipo dedicado a ofrecer soluciones tecnológicas innovadoras que ayudan a las empresas a optimizar sus procesos y aumentar su productividad. Con años de experiencia en el sector, nos especializamos en desarrollo de software, gestión de infraestructura y soporte técnico.</p>
+        </section>
+
+        <!-- Sección de Servicios -->
+        <section id="servicios" class="section">
+            <h2>Nuestros Servicios</h2>
+            <div class="services">
+                <div class="service-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Desarrollo de Software a Medida</h3>
+                    <p>Desarrollamos soluciones personalizadas para cumplir con las necesidades específicas de tu empresa.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Soporte Técnico y Mantenimiento</h3>
+                    <p>Brindamos soporte técnico continuo y mantenimiento para asegurar el correcto funcionamiento de tus sistemas.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Consultoría IT</h3>
+                    <p>Ofrecemos asesoramiento especializado para mejorar la gestión y la tecnología en tu empresa.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-box"></i>
+                    <h3>Implementación de Sistemas ERP</h3>
+                    <p>Implementamos sistemas ERP para mejorar la gestión y eficiencia de tus procesos empresariales.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>Gestión de Infraestructura y Redes</h3>
+                    <p>Gestionamos y optimizamos la infraestructura tecnológica y redes para garantizar su máximo rendimiento.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section id="contacto" class="section">
+            <h2>Contáctanos</h2>
+            <ul>
+                <li><a href="https://wa.me/+573232103036" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=61560267431573" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a href="https://x.com/ZynexSis_zs" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a href="https://www.instagram.com/zynexsis_zs/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <script>
+        function showSection(id) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+        }
+    </script>
+</body>
+</html>
+
+
+
